@@ -1,0 +1,187 @@
+.app-loginOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: #00000049;
+    position: fixed;
+    inset: 0;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #f0aeba;
+    outline: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #f0aeba;
+    cursor: pointer;
+}
+
+.app-loginContentData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.app-loginContentName {
+    z-index: 1;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .colorCheck {
+        color: #f0aeba;
+    }
+
+}
+
+.app-loginWrap {
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-size: cover;
+}
+
+/* Header Styles */
+.headWrap {
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px 0;
+}
+
+.headLogoWrap {
+    h1 {
+        font-weight: 500;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .colorWhite {
+        color: #000;
+    }
+
+    .colorCheck {
+        color: #f0aeba;
+    }
+}
+
+/* Header Styles End */
+
+/* Login Styles Start */
+.loginBody {
+    position: relative;
+
+    img {
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: contain;
+        background-size: cover;
+        width: 100%;
+    }
+}
+
+.loginForm {
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    h3 {
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #d4d2d2;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #d4d2d2;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-top: 10px;
+
+        ::placeholder {
+            font-size: 14px;
+        }
+    }
+}
+
+.loginButton {
+    margin: 20px auto 0;
+    width: 50%;
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #f0aeba;
+        color: #fff;
+    }
+}
+
+/* Home Page */
+.BannerImgWrap {
+    filter: brightness(0.8);
+    /* opacity: 0.8; */
+    position: relative;
+    img {
+        width: 100%;
+        height: calc(100vh - 70px);
+        object-fit: cover;
+        object-position: center;
+    }
+    .BannerImgContent{
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        color: #fff;
+        button{
+            border: 1px solid #fff;
+            background-color: #fff;
+            color: #383838;
+            border-radius: 10px;
+        }
+    }
+}
+.OutfitHead{
+    text-align: center;
+    padding: 40px 0;
+    h1{
+        font-weight: 500;
+    }
+}
+.OutfitGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    .OutfitBox img{
+        width: 100%;
+        height: 100%;
+        min-height: 120px;
+        border-radius: 10px;
+        object-fit: contain;
+        background-position: center;
+    }
+}
